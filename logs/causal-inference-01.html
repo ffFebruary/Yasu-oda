@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>因果推論 勉強ログ #01</title>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; max-width: 700px; margin: 0 auto; padding: 40px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; }
+        .date { color: #888; font-size: 0.9em; }
+        .content { background: white; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        code { background: #f4f4f4; padding: 2px 5px; }
+    </style>
+</head>
+<body>
+    <a href="../index.html">← 戻る</a>
+    <p class="date">2024.05.20</p>
+    <h1>因果推論の基礎：潜在結果モデル</h1>
+    
+    <div class="content">
+        <p>今日は因果推論の核となる「潜在結果モデル（Potential Outcomes Framework）」について学びました。</p>
+        <p>個体 $i$ における因果効果は、以下の式で表されます：</p>
+        <p style="text-align:center; font-weight:bold;">$Y_i(1) - Y_i(0)$</p>
+        <p>しかし、現実には片方しか観測できないため（根本的問題）、これをどう推定するかが面白いところです。</p>
+        
+        <h3>今日のコード（R / Python）</h3>
+        <pre><code># Rでの平均因果効果の計算例
+ate <- mean(data$outcome[data$treat == 1]) - mean(data$outcome[data$treat == 0])</code></pre>
+    </div>
+</body>
+</html>
