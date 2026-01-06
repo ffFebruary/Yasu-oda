@@ -6,7 +6,8 @@ I’m currently learning causal inference.
 
 ## 🌍 My Website
 [Click here to look at my page!](https://fffebruary.github.io/Yasu-oda/)
-[Study log of causal inference](https://fffebruary.github.io/Yasu-oda/)
+
+[Study log of causal inference](https://fffebruary.github.io/Yasu-oda/logs/causal-inference-01.html)
 
 ## 📊 GitHub Stats
 ![ffFebruary's GitHub stats](https://github-readme-stats.vercel.app/api?username=ffFebruary&show_icons=true&theme=radical)
