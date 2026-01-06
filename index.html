@@ -6,7 +6,28 @@
     <style>
         body { font-family: sans-serif; text-align: center; background: #f4f4f4; padding: 50px; }
         h1 { color: #333; }
-        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        
+        /* 箇条書きの設定 */
+        #blog ul {
+            list-style: none; /* ← これで黒点を消します */
+            padding: 0;       /* 左側の余白をなくす */
+        }
+        
+        #blog li {
+            margin: 10px 0;   /* 記事ごとの上下の隙間 */
+        }
+
+        /* リンクのデザイン（お好みで！） */
+        #blog a {
+            text-decoration: none; /* 下線を消す */
+            color: #007bff;       /* リンクの色を青に */
+            font-weight: bold;
+        }
+        #blog a:hover {
+            text-decoration: underline; /* マウスを乗せた時だけ下線を出す */
+            color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -17,9 +38,10 @@
     </div>
 
     <section id="blog">
-    <h2>Study Logs (Causal Inference) 📚</h2>
-        <a href="logs/causal-inference-01.html">2024.05.20 - 因果推論の基礎：潜在結果モデル</a>
-    
-</section>
+        <h2>Study Logs (Causal Inference) 📚</h2>
+        <ul>
+            <li><a href="logs/causal-inference-01.html">2024.05.20 - 因果推論の基礎：潜在結果モデル</a></li>
+        </ul>
+    </section>
 </body>
 </html>
